@@ -1,0 +1,13 @@
+Button on CLick event
+<button (click)="alertDemo()" >Submit</button><br>
+Two way data binding Input box : OP {{userName}}
+<input type="text" placeholder="User Name"  [ngClass]="'red'" [(ngModel)]="userName"><br>
+
+Normal Input box
+<input type="text" placeholder="Name" [ngClass]="'red'">
+
+<p>String Interpolition : {{title}} works!</p>
+<p>For Loop wiht If condition</p>
+<ul  *ngFor="let d of data">
+    <li  *ngIf="d.id != 2"><p>id: {{d.id}} :: Name : {{d.name}}</p></li>
+</ul>
